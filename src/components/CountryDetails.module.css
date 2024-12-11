@@ -1,0 +1,61 @@
+.details {
+  padding: 1.5rem 1rem;
+  display: grid;
+  gap: 2rem;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.section {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  border-left: 4px solid var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  transform: translateX(8px);
+}
+
+.section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.description {
+  color: var(--text-color);
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 2rem;
+  border-left: 2px solid var(--primary-color);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.list li {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  padding: 0.75rem 1.25rem;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.list li:hover {
+  transform: translateY(-3px) rotate(2deg);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+}
